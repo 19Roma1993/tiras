@@ -1,0 +1,64 @@
+#contact {
+  .section-content {
+    margin-top: 20px;
+    }
+  .section-footer {
+    margin-top: 30px;
+    }
+  }
+.contact-info {
+  text-align: left;
+  &:before {
+    content: " ";
+    display: table;
+    }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+    }
+  &:before {
+    content: " ";
+    display: table;
+    }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+    }
+  > div {
+    margin: 1em 0;
+    }
+  .icons-wrap {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    &:before {
+      backface-visibility: hidden;
+      perspective: 1000;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #333333;
+      z-index: -1;
+      }
+    .icons {
+      color: #333333;
+      }
+    }
+  .contact-way {
+    display: inline-block;
+    min-height: 35px;
+    line-height: 35px;
+    margin-left: 60px;
+    }
+  }

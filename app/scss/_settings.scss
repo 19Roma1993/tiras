@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Fireye GF Lite';
+  src: url('../font/fireyegf_3_lite.eot');
+  /* IE9 Compat Modes */
+  src: url('../font/fireyegf_3_lite.eot?#iefix') format("embedded-opentype"), url('../font/fireyegf_3_lite.woff2') format("woff2"), url('../font/fireyegf_3_lite.woff') format("woff"), url('../font/fireyegf_3_lite.ttf') format("truetype"), url('../font/fireyegf_3_lite.svg#svgFontName') format("svg");
+  /* Legacy iOS */
+  }
+/*==================================================
+fix ie10 viewport bug
+==================================================*/
+@-webkit-viewport {
+  width: device-width;
+  }
+@-moz-viewport {
+  width: device-width;
+  }
+@-ms-viewport {
+  width: device-width;
+  }
+@-o-viewport {
+  width: device-width;
+  }
+@viewport {
+  width: device-width;
+  }
+/*==================================================
+reset
+==================================================*/
+a {
+  &:active, &:focus, &:hover {
+    outline: 0;
+    }
+  }
+.btn {
+  &.active {
+    &.focus, &:focus {
+      outline: 0;
+      }
+    }
+  &.focus {
+    outline: 0;
+    }
+  &:active {
+    &.focus, &:focus {
+      outline: 0;
+      }
+    }
+  &:focus {
+    outline: 0;
+    }
+  }
+.form-control {
+  &:focus, &.focus {
+    outline: 0;
+    }
+  }
+a {
+  &:focus, &:hover {
+    text-decoration: none;
+    }
+  }
+.btn {
+  &.active, &:active {
+    box-shadow: none;
+    }
+  }
+.form-control {
+  box-shadow: none;
+  &:focus {
+    box-shadow: none;
+    }
+  }
+.btn, .form-control {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-clip: padding-box;
+  }
+.btn-group-vertical .btn {
+  &:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    }
+  &:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    }
+  }
+.dropdown-menu {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-clip: padding-box;
+  box-shadow: none;
+  }
+button:focus {
+  outline: 0;
+  }
+html {
+  height: 100%;
+  background-color: transparent;
+  overflow-x: hidden;
+  }
+body {
+  height: 100%;
+  background-color: transparent;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  }

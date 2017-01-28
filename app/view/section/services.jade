@@ -1,0 +1,28 @@
+section#services.main-section
+	.section-wrap
+		.tb
+			.tb-cell
+				.smaller.main.container
+					.row
+						.col-md-12
+							.row.section-heading
+								.col-md-12
+									h1.section-title
+										| Наші послуги
+										span.letter
+									.section-icon
+										i.zmdi.zmdi-code-setting.zmdi-hc-2x
+							.row.section-content
+								.our-services.clearfix
+									each val, index in service
+										a.our-services-item(href='#' data-service='service#{val}')
+											i.zmdi.zmdi-airplay.zmdi-hc-3x.our-services-icon
+											h3 Intro
+										.our-services-content-item(id='service#{val}')
+											a.our-services-close(href='#')
+												i.zmdi.zmdi-close.zmdi-hc-2x.pull-right
+											h2=loremTitle
+											em=loremSmall
+							.row.section-footer
+								.col-md-12
+									a.btn.btn-theme.btn-lg.shadow.menu-link(href='#portfolio') portfolio

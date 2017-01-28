@@ -1,0 +1,32 @@
+include ../var/var
+- var cdnjs = 'https://cdnjs.cloudflare.com/ajax/libs';
+doctype html
+//
+	TODO responsive on horizontal mobile, vertical tablet
+	TODO mobile portfolio position
+	TODO reload calculating width
+//if IE 9
+	html.ie.ie9.ie-lt10.no-js(lang='en')
+// [if gt IE 9] <!
+html.no-js(lang='en')
+	// <![endif]
+	head
+		include ../parts/meta
+		include ../parts/style
+	body
+		#preloader
+			#preloader-ele.ball-scale-ripple-multiple.bh
+				div
+				div
+				div
+		div(id='bg' data-img-desk='img/html5-video-desktop.jpg' data-img-mob='img/html5-video-mobile.jpg')
+		#video
+			video.html5-video(autoplay='', loop='', muted='')
+				source(src='video/video.webm', type='video/webm')
+				source(src='video/video.mp4', type='video/mp4')
+		#overlay
+		include ../parts/header
+		include ../parts/menu
+		block content
+		include ../parts/footer
+		include ../parts/script

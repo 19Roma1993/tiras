@@ -1,0 +1,84 @@
+.btn {
+  transition: all 300ms ease-in-out;
+  font-family: "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 34px;
+  line-height: 32px;
+  padding: 0 35px;
+  }
+.btn-lg, .btn-group-lg > .btn {
+  height: 46px;
+  line-height: 44px;
+  padding: 0 35px;
+  }
+.btn-theme {
+  color: #ffffff;
+  background-color: #333333;
+  border-color: #333333;
+  &.border, &:hover, &:focus, &.focus, &:active, &.active {
+    color: #333333;
+    background-color: transparent;
+    border-color: #333333;
+    }
+  }
+.open > .dropdown-toggle.btn-theme {
+  color: #333333;
+  background-color: transparent;
+  border-color: #333333;
+  }
+.btn-theme.border {
+  &:hover, &:focus, &.focus, &:active, &.active {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+    }
+  }
+.open > .border.dropdown-toggle.btn-theme.border {
+  color: #ffffff;
+  background-color: #333333;
+  border-color: #333333;
+  }
+.btn-default {
+  color: #ffffff;
+  background-color: #333333;
+  border-color: #333333;
+  &.border, &:hover, &:focus, &.focus, &:active, &.active {
+    color: #333333;
+    background-color: transparent;
+    border-color: #333333;
+    }
+  }
+.open > .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: transparent;
+  border-color: #333333;
+  }
+.btn-default.border {
+  &:hover, &:focus, &.focus, &:active, &.active {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+    }
+  }
+.open > .border.dropdown-toggle.btn-default.border {
+  color: #ffffff;
+  background-color: #333333;
+  border-color: #333333;
+  }
+.form-control {
+  /* input, textarea */
+  color: #555555;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: #333333;
+  &:focus, &.focus {
+    border-color: #bbbbbb;
+    background-color: rgba(255, 255, 255, 0.35);
+    }
+  }
+.input-group-btn > .btn {
+  /* input button */
+  border-color: #333333;
+  }

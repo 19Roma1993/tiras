@@ -1,0 +1,75 @@
+.site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1000;
+  }
+.logo-wrap {
+  float: left;
+  display: table;
+  }
+.logo {
+  max-width: 100%;
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  fill: rgba(50, 50, 50, 0.8);
+  }
+.logo-title {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 1rem;
+  font-family: 'Fireye GF Lite', sans-serif;
+  }
+.menu-toggle-wrap {
+  user-select: none;
+  float: right;
+  display: block;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  margin: 0 7px;
+  }
+.menu-toggle {
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  &:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333333;
+    }
+  &:hover {
+    color: #333333;
+    }
+  .icon-open{
+    display: inline-block;
+    }
+  .icon-close{
+    display: none;
+    }
+  }
+.menu-in{
+  .menu-toggle{
+    .icon-open{
+      display: none;
+      }
+    .icon-close{
+      display: inline-block;
+      }
+    }
+  }
